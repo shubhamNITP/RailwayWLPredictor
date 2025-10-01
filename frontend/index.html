@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway WL Predictor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper d-flex flex-column align-items-center">
+        <!-- Predictor Card -->
+        <div class="card shadow-lg p-4 mb-4">
+            <h2 class="text-center mb-4">Railway WL Predictor</h2>
+
+            <div class="mb-3">
+                <label for="wl_position" class="form-label">WL Position</label>
+                <input type="number" class="form-control" id="wl_position" placeholder="Enter WL position">
+            </div>
+
+            <div class="mb-3">
+                <label for="days_left" class="form-label">Days Left</label>
+                <input type="number" class="form-control" id="days_left" placeholder="Days left for journey">
+            </div>
+
+            <div class="mb-3">
+                <label for="class_type" class="form-label">Class Type</label>
+                <select class="form-select" id="class_type">
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="3A">3A</option>
+                    <option value="2A">2A</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="quota" class="form-label">Quota</label>
+                <select class="form-select" id="quota">
+                    <option value="GN">GN</option>
+                    <option value="Tatkal">Tatkal</option>
+                    <option value="Ladies">Ladies</option>
+                </select>
+            </div>
+
+            <button class="btn btn-gradient w-100" onclick="predictWL()">Predict</button>
+
+            <div id="result" class="mt-4 text-center fs-5 fw-bold"></div>
+        </div>
+
+        <!-- Prediction History Table -->
+        <div class="card shadow-lg p-3 w-100" id="history-card">
+            <h4 class="text-center mb-3">Prediction History</h4>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" id="history-table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>WL</th>
+                            <th>Days Left</th>
+                            <th>Class</th>
+                            <th>Quota</th>
+                            <th>Probability</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows inserted dynamically by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

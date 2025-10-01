@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffffee;
+    border-radius: 20px;
+    padding: 30px 25px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2, h4 {
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#result {
+    color: #ff4b2b;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #result {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .card {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    #result {
+        font-size: 1.1rem;
+    }
+}
+
+#history-card {
+    max-width: 900px;
+}
