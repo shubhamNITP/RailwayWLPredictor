@@ -24,9 +24,3 @@ This project predicts the **confirmation probability of Indian Railway Waitlist 
 
 ---
 
-## 🚀 Running Locally
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/railway-wl-predictor.git
-cd railway-wl-predictor
