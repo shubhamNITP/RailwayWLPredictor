@@ -1,4 +1,4 @@
-# 🚂 Railway WL Predictor (Premium)
+# 🚂 Railway WL Predictor
 
 A machine learning-powered web application that predicts the **confirmation probability of Indian Railway Waitlist (WL) tickets**. It uses a custom **RandomForest Classifier** trained on simulated waitlist confirmation patterns mapping to class type, quota type, season, train type, days left, and current waitlist position.
 
